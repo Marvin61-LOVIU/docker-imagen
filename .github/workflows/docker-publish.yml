@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .                                # Contexto es la raíz del repositorio
-          file: DockerFile                           # Aquí usamos 'file' en lugar de 'dockerfile'
+          file: Dockerfile                           # Aquí usamos 'file' en lugar de 'dockerfile'
           push: true                                # Habilitar para hacer push de la imagen
           tags: ${{ secrets.DOCKER_USERNAME }}/docker-image-example:latest  # Etiqueta para la imagen
